@@ -67,7 +67,6 @@ def getSmallestGuess(sudoString):
 	if(guessHeap):
 		s = heappop(guessHeap)
 		guesses = []
-		print(s[1],'=',s[0],'@',s[2])
 		for k in s[1]:
 			guesses.append(mark(sudoString,s[2],k))
 		return guesses
